@@ -1,0 +1,239 @@
+:root {
+  --text-color: rgba(39, 39, 39);
+  --heading-color: #272727;
+  --span-color: #e55473;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*?----------------------------------> common styles  */
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+}
+section {
+  padding-block: 4rem;
+}
+span {
+  color: var(--span-color);
+}
+.container {
+  width: 88%;
+  margin: 0 auto;
+}
+.text {
+  font-size: 1.125rem;
+  color: var(--text-color);
+  opacity: 0.6;
+}
+.title-black {
+  color: var(--heading-color);
+}
+.btn {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: #e55473;
+  padding: 1.25rem 2.6875rem;
+}
+.section-title {
+  font-size: 2.5em;
+  font-weight: 800;
+  color: var(--heading-color);
+}
+.pink {
+  background: rgba(167, 33, 98, 0.15);
+}
+.sky-blue {
+  background: rgba(5, 151, 160, 0.15);
+}
+.green {
+  background: rgba(71, 125, 17, 0.15);
+}
+/*?----------------------------------> hero styles  */
+.hero {
+  background: rgba(229, 84, 115, 0.1);
+  margin-bottom: 3.125rem;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+}
+.hero-content > div {
+  flex-basis: 50%;
+}
+.hero-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero-headline {
+  font-size: 5em;
+  font-weight: 800;
+  width: 85%;
+}
+.hero-text {
+  width: 75%;
+  line-height: 1.5;
+}
+.hero-img-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.125rem;
+}
+/*?----------------------------------> featured styles  */
+.featured-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.featured-text {
+  width: 30%;
+  margin: 0 auto;
+}
+.featured-collection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+}
+.featured-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.flower-holder {
+  display: flex;
+  justify-content: center;
+  border-radius: 50rem 50rem 0 0;
+  padding: 6.875rem 4.875rem 0;
+  height: 33.625rem;
+  width: 29rem;
+}
+.featured-item-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--heading-color);
+  text-decoration: underline;
+}
+
+/*?----------------------------------> services styles  */
+.services-content {
+  text-align: center;
+  border-radius: 8px;
+  background: rgba(39, 39, 39, 0.05);
+  padding-block: 5.375rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.services-text {
+  font-size: 1.5em;
+  color: var(--text-color);
+  opacity: 0.8;
+  padding-top: 1.5rem;
+}
+/*?----------------------------------> offer styles  */
+.offer {
+  border-radius: 8px;
+  background: rgba(229, 84, 115, 0.05);
+  padding-block: 6.25rem;
+}
+.offer-content {
+  display: flex;
+  align-items: center;
+}
+.offer-content > div {
+  flex-basis: 50%;
+}
+.offer-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+.offer-text {
+  padding-bottom: 0.5rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.offer-img-content {
+  display: flex;
+  justify-content: center;
+}
+
+/*?----------------------------------> instagram styles  */
+.instagram-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.insta-text {
+  width: 35%;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+}
+.instagram-img-content {
+  display: flex;
+  justify-content: space-between;
+}
+/*?----------------------------------> newsletter styles  */
+.newsletter-content {
+  padding: 10.75rem 7.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: url(../assets/Rectangle\ 9.png) no-repeat center;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+.form {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.newsletter-input {
+  padding: 1.5rem 32rem 1.5rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  opacity: 0.6;
+  outline: 0;
+}
+/*?----------------------------------> footer styles  */
+.footer {
+  background: #111010;
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+}
+.footer-content {
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer-title {
+  font-size: 3em;
+  font-weight: 800;
+}
+.footer-text {
+  color: rgba(255, 255, 255, 0.9);
+  width: 35%;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+}
+.copyright {
+  opacity: 0.4;
+}
