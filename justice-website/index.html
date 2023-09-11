@@ -1,573 +1,773 @@
 <!DOCTYPE html>
-<html lang="en" class="ff-poppins">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bike Zone</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://thumbs.dreamstime.com/b/sports-motorcycle-silhouette-logo-design-188368194.jpg"
-    />
-    <!-- tailwind and daisyUI  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Justice - Everything Legal</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/business.png" />
+    <link rel="stylesheet" href="./output/tailwind.css" />
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!-- custom css  -->
-    <style>
-      .ff-poppins {
-        font-family: "Poppins", sans-serif;
-      }
-    </style>
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body class="bg-white">
-    <!-- header starts  -->
-    <header>
-      <!-- hero background  -->
-      <div
-        class="hero h-screen"
-        style="
-          background-image: url(https://images.unsplash.com/photo-1628506854472-4158986d61c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80);
-        "
-      >
-        <div class="hero-overlay bg-opacity-60">
-          <!-- navigation bar starts -->
-          <div
-            class="navbar bg-base-100 bg-transparent container mx-auto py-5 lg:py-10"
-          >
-            <div class="navbar-start">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                </label>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base text-white"
-                >
-                  <li><a>Home</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>News</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-              </div>
-              <a
-                class="btn btn-ghost normal-case text-white text-[23px] lg:text-[35px] hidden lg:block"
-                >Bike Zone</a
+  <body class="bg-white font-poppins">
+    <!-- header starts -->
+    <header class="container mx-auto">
+      <!-- navigation bar -->
+      <nav class="navbar py-4 sm:py-8 lg:py-12">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-base text-white">
-                <li><a>Home</a></li>
-                <li><a>Shop</a></li>
-                <li><a>News</a></li>
-                <li><a>Contact</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <a
-                class="btn btn-ghost normal-case text-white text-[23px] lg:text-[35px] lg:hidden"
-                >Bike Zone</a
-              >
-              <a
-                class="btn btn-error text-white hidden lg:block py-[17px] px-[52px] text-base leading-none"
-                >Login</a
-              >
-            </div>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li class="text-base"><a class="">Home</a></li>
+              <li class="text-base">
+                <a class="">Services</a>
+              </li>
+              <li class="text-base"><a class="" href="#">Cases</a></li>
+              <li class="text-base"><a class="" href="#">Blog</a></li>
+              <li class="text-base"><a class="" href="#">Contact Us</a></li>
+            </ul>
           </div>
-          <!-- navigation bar ends -->
+          <a class="btn btn-ghost normal-case text-xl">
+            <img
+              class="hidden lg:block"
+              src="./assets/images/logo2.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <div class="">
+            <ul class="flex flex-row gap-7.5">
+              <li class="text-base text-light-black"><a>Home</a></li>
+              <li class="text-base text-light-black">
+                <a class="flex items-center gap-2"
+                  >Services<i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+              <li class="text-base text-light-black">
+                <a class="flex items-center gap-2" href="#"
+                  >Cases<i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+              <li class="text-base text-light-black">
+                <a class="flex items-center gap-2" href="#"
+                  >Blog<i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+              <li class="text-base text-light-black">
+                <a class="flex items-center gap-2" href="#"
+                  >Contact Us<i class="fa-solid fa-chevron-right"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-ghost normal-case text-xl">
+            <img
+              class="block lg:hidden"
+              src="./assets/images/logo2.png"
+              alt=""
+            />
+          </a>
+          <a class="nav-btn hidden lg:block">Free Consultation</a>
+        </div>
+      </nav>
 
-          <!-- hero content starts  -->
-          <div class="container mx-auto min-h-full flex items-center">
-            <div class="hero-content flex-col items-start text-start">
-              <div class="max-w-2xl space-y-7">
-                <h1
-                  class="text-5xl font-bold text-[36px] lg:text-[65px] leading-tight text-white"
-                >
-                  Keep Your Ride Safe At Every Time
-                </h1>
-                <p class="py-6 text-base w-3/4 font-light">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
-                </p>
-                <button
-                  class="btn btn-error text-white py-[17px] px-[32px] text-base leading-none"
-                >
-                  Purchase
-                </button>
-              </div>
+      <!-- hero  -->
+      <div class="hero h-full px-2 py-12 rounded-lg overflow-hidden">
+        <img
+          class="h-full w-full aspect-video"
+          src="./assets/images/banner.png"
+          alt="banner"
+        />
+        <div
+          class="hero-overlay bg-gradient-to-t from-[#111] to-[rgba(17, 17, 17, 0.00)] rounded-lg"
+        ></div>
+        <div class="hero-content text-center text-neutral-content rounded-lg">
+          <div class="max-w-xs sm:max-w-lg lg:max-w-2xl">
+            <h1
+              class="mb-6 font-garamond text-3xl sm:text-5xl lg:text-7xl font-bold text-white"
+            >
+              We Provide Effective Legal Solutions
+            </h1>
+            <p class="mb-8 text-sm sm:text-base">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row justify-between gap-4 sm:w-11/12 mx-auto"
+            >
+              <input
+                type="text"
+                placeholder="Search your services"
+                class="px-4.5 py-7 input w-full bg-white"
+              />
+              <button class="nav-btn lg:text-xl w-1/2 mx-auto">Search</button>
             </div>
           </div>
-          <!-- hero content ends -->
         </div>
       </div>
     </header>
     <!-- header ends -->
 
     <!-- main starts  -->
-    <main>
-      <!-- featured section starts  -->
-      <section class="featured my-24">
-        <div class="container mx-auto text-center">
-          <h3 class="text-2xl sm:text-4xl lg:text-5xl text-black font-semibold">
-            Fetured Bikes In This Year
-          </h3>
-          <p class="text-sm font-semibold text-[#E76F51] pt-1 lg:pt-2">
-            Best bike collection
+    <main class="container mx-auto text-center">
+      <!-- categories section starts -->
+      <section class="py-12 px-2">
+        <div class="pb-6 sm:pb-8 lg:pb-16">
+          <h4
+            class="font-garamond text-2xl sm:text-2.5rem text-black pb-4 sm:pb-6"
+          >
+            The Legal Practice Area
+          </h4>
+          <p
+            class="text-sm sm:text-base w-4/5 lg:w-3/5 mx-auto text-light-black"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
           </p>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:divide-x divide-y divide-[#E7E7E7]"
+        >
           <div
-            class="grid grid-cols-1 sm:grid-cols-3 sm:pt-10 mx-auto pt-24 pb-4 justify-center items-center space-y-4 sm:space-y-0"
+            class="card hover:bg-gradient-to-b from-[#F3F3F3] to-[rgba(243, 243, 243, 0.00)] rounded-none w-full"
           >
-            <div class="flex justify-center items-center py-2 px-4">
+            <figure class="px-10 pt-10">
               <img
-                class="w-full"
-                src="./assets/images/others/latest1.png"
-                alt=""
+                src="./assets/images/business.png"
+                alt="Shoes"
+                class="rounded-xl"
               />
+            </figure>
+            <div class="card-body items-center text-center gap-6">
+              <h2 class="font-garamond text-black text-xl sm:text-3xl">
+                Business Law
+              </h2>
+              <p class="text-sm sm:text-base text-light-black">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="card-actions">
+                <button class="card-btn">
+                  <i class="fa-solid fa-lg fa-arrow-right text-white"></i>
+                </button>
+              </div>
             </div>
-            <div class="flex justify-center items-center py-2 px-4">
+          </div>
+          <div
+            class="card hover:bg-gradient-to-b from-[#F3F3F3] to-[rgba(243, 243, 243, 0.00)] rounded-none w-full"
+          >
+            <figure class="px-10 pt-10">
               <img
-                class="w-full"
-                src="./assets/images/others/latest2.png"
-                alt=""
+                src="./assets/images/business.png"
+                alt="Shoes"
+                class="rounded-xl"
               />
+            </figure>
+            <div class="card-body items-center text-center gap-6">
+              <h2 class="font-garamond text-black text-xl sm:text-3xl">
+                Business Law
+              </h2>
+              <p class="text-sm sm:text-base text-light-black">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="card-actions">
+                <button class="card-btn">
+                  <i class="fa-solid fa-lg fa-arrow-right text-white"></i>
+                </button>
+              </div>
             </div>
-            <div class="flex justify-center items-center py-2 px-4">
+          </div>
+          <div
+            class="card hover:bg-gradient-to-b from-[#F3F3F3] to-[rgba(243, 243, 243, 0.00)] rounded-none w-full"
+          >
+            <figure class="px-10 pt-10">
               <img
-                class="w-full"
-                src="./assets/images/others/latest3.png"
-                alt=""
+                src="./assets/images/business.png"
+                alt="Shoes"
+                class="rounded-xl"
               />
+            </figure>
+            <div class="card-body items-center text-center gap-6">
+              <h2 class="font-garamond text-black text-xl sm:text-3xl">
+                Business Law
+              </h2>
+              <p class="text-sm sm:text-base text-light-black">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="card-actions">
+                <button class="card-btn">
+                  <i class="fa-solid fa-lg fa-arrow-right text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card hover:bg-gradient-to-b from-[#F3F3F3] to-[rgba(243, 243, 243, 0.00)] rounded-none w-full"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/images/business.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center gap-6">
+              <h2 class="font-garamond text-black text-xl sm:text-3xl">
+                Business Law
+              </h2>
+              <p class="text-sm sm:text-base text-light-black">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="card-actions">
+                <button class="card-btn">
+                  <i class="fa-solid fa-lg fa-arrow-right text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card hover:bg-gradient-to-b from-[#F3F3F3] to-[rgba(243, 243, 243, 0.00)] rounded-none w-full"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/images/business.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center gap-6">
+              <h2 class="font-garamond text-black text-xl sm:text-3xl">
+                Business Law
+              </h2>
+              <p class="text-sm sm:text-base text-light-black">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="card-actions">
+                <button class="card-btn">
+                  <i class="fa-solid fa-lg fa-arrow-right text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card hover:bg-gradient-to-b from-[#F3F3F3] to-[rgba(243, 243, 243, 0.00)] rounded-none w-full"
+          >
+            <figure class="px-10 pt-10">
+              <img
+                src="./assets/images/business.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center gap-6">
+              <h2 class="font-garamond text-black text-xl sm:text-3xl">
+                Business Law
+              </h2>
+              <p class="text-sm sm:text-base text-light-black">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <div class="card-actions">
+                <button class="card-btn">
+                  <i class="fa-solid fa-lg fa-arrow-right text-white"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- featured section ends -->
+      <!-- categories section ends -->
 
-      <!-- latest section starts  -->
-      <section class="latest my-24">
-        <div class="container mx-auto">
-          <h3
-            class="text-2xl sm:text-4xl lg:text-5xl text-black font-semibold p-4"
+      <!-- review section starts  -->
+      <section class="py-12 px-2">
+        <div class="pb-6 sm:pb-8 lg:pb-16">
+          <h4
+            class="font-garamond text-2xl sm:text-2.5rem text-black pb-4 sm:pb-6"
           >
-            Latest
-          </h3>
-
-          <div
-            class="grid grid-cols-1 sm:grid-cols-3 sm:pt-10 mx-auto pt-8 pb-4 justify-center items-center space-y-4 sm:space-y-0"
+            What Our Client Say
+          </h4>
+          <p
+            class="text-sm sm:text-base w-4/5 lg:w-3/5 mx-auto text-light-black"
           >
-            <div class="flex justify-center items-center py-2 px-4">
-              <div class="card w-96 shadow-xl p-4 rounded">
-                <figure>
-                  <img src="./assets/images/others/latest1.png" alt="Shoes" />
-                </figure>
-                <div class="card-body p-0">
-                  <h2
-                    class="card-title pt-8 pb-2 font-2xl text-black font-semibold"
-                  >
-                    Motorcycles & Scooters
-                  </h2>
-                  <p class="pb-8 text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Lacus, fermentum amet faucibus sed id nisi lectus at.
-                  </p>
-                  <div class="card-actions">
-                    <button
-                      class="btn border-transparent hover:border-[#E76F51] bg-[#E76F51] hover:bg-white rounded text-white hover:text-[#E76F51]"
-                    >
-                      Read More
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex justify-center items-center py-2 px-4">
-              <div class="card w-96 shadow-xl p-4 rounded">
-                <figure>
-                  <img src="./assets/images/others/latest2.png" alt="Shoes" />
-                </figure>
-                <div class="card-body p-0">
-                  <h2
-                    class="card-title pt-8 pb-2 font-2xl text-black font-semibold"
-                  >
-                    Motorcycles & Scooters
-                  </h2>
-                  <p class="pb-8 text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Lacus, fermentum amet faucibus sed id nisi lectus at.
-                  </p>
-                  <div class="card-actions">
-                    <button
-                      class="btn border-transparent hover:border-[#E76F51] bg-[#E76F51] hover:bg-white rounded text-white hover:text-[#E76F51]"
-                    >
-                      Read More
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex justify-center items-center py-2 px-4">
-              <div class="card w-96 shadow-xl p-4 rounded">
-                <figure>
-                  <img src="./assets/images/others/latest3.png" alt="Shoes" />
-                </figure>
-                <div class="card-body p-0">
-                  <h2
-                    class="card-title pt-8 pb-2 font-2xl text-black font-semibold"
-                  >
-                    Motorcycles & Scooters
-                  </h2>
-                  <p class="pb-8 text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Lacus, fermentum amet faucibus sed id nisi lectus at.
-                  </p>
-                  <div class="card-actions">
-                    <button
-                      class="btn border-transparent hover:border-[#E76F51] bg-[#E76F51] hover:bg-white rounded text-white hover:text-[#E76F51]"
-                    >
-                      Read More
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
         </div>
-      </section>
-      <!-- featured section ends -->
-
-      <!-- happy clients section starts  -->
-      <section class="my-24">
-        <div class="container mx-auto text-center">
-          <h3 class="text-2xl sm:text-4xl lg:text-5xl text-black font-semibold">
-            Happy <span class="text-[#E76F51]">Clients says</span>
-          </h3>
+        <div class="hero h-full px-2 py-12 rounded-lg overflow-hidden">
+          <img
+            class="max-h-[500px] h-full w-full"
+            src="./assets/images/banner.png"
+            alt="banner"
+          />
           <div
-            class="grid grid-cols-1 sm:grid-cols-3 sm:pt-10 mx-auto pt-12 px-4 sm:space-x-4 pb-4 justify-center items-center space-y-4 sm:space-y-0"
-          >
-            <div
-              class="card card-compact border border-[#DEDEDE] border-solid px-9 py-10 space-y-8"
-            >
-              <figure>
+            class="hero-overlay bg-[rgba(17, 17, 17, 0.80)] rounded-lg"
+          ></div>
+          <div class="hero-content text-center text-neutral-content rounded-lg">
+            <div class="carousel w-full text-white">
+              <div
+                id="slide1"
+                class="carousel-item relative w-full flex flex-col justify-center items-center"
+              >
                 <img
-                  class="w-1/2"
-                  src="./assets/images/others/user-1.png"
+                  class="w-20 h-20 rounded-full object-cover mb-6"
+                  src="./assets/images/awlad.jpg"
+                  alt="awlad"
+                />
+                <h5 class="font-garamond text-2xl pb-2">Awlad</h5>
+                <p class="pb-8">UIX Designer</p>
+                <p class="w-4/5 text-xs sm:text-sm lg:text-base">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur.
+                </p>
+                <div
+                  class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                >
+                  <a
+                    href="#slide4"
+                    class="btn btn-circle bg-transparent border-0 hover:bg-transparent hover:border-0"
+                    >❮</a
+                  >
+                  <a
+                    href="#slide2"
+                    class="btn btn-circle bg-transparent border-0 hover:bg-transparent hover:border-0"
+                    >❯</a
+                  >
+                </div>
+              </div>
+              <div
+                id="slide2"
+                class="carousel-item relative w-full flex flex-col justify-center items-center"
+              >
+                <img
+                  class="w-20 h-20 rounded-full object-cover mb-6"
+                  src="./assets/images/awlad.jpg"
+                  alt="awlad"
+                />
+                <h5 class="font-garamond text-2xl pb-2">Awlad</h5>
+                <p class="pb-8">UIX Designer</p>
+                <p class="w-4/5 text-xs sm:text-sm lg:text-base">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur.
+                </p>
+                <div
+                  class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                >
+                  <a
+                    href="#slide1"
+                    class="btn btn-circle bg-transparent border-0 hover:bg-transparent hover:border-0"
+                    >❮</a
+                  >
+                  <a
+                    href="#slide3"
+                    class="btn btn-circle bg-transparent border-0 hover:bg-transparent hover:border-0"
+                    >❯</a
+                  >
+                </div>
+              </div>
+              <div
+                id="slide3"
+                class="carousel-item relative w-full flex flex-col justify-center items-center"
+              >
+                <img
+                  class="w-20 h-20 rounded-full object-cover mb-6"
+                  src="./assets/images/awlad.jpg"
+                  alt="awlad"
+                />
+                <h5 class="font-garamond text-2xl pb-2">Awlad</h5>
+                <p class="pb-8">UIX Designer</p>
+                <p class="w-4/5 text-xs sm:text-sm lg:text-base">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur.
+                </p>
+                <div
+                  class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                >
+                  <a
+                    href="#slide2"
+                    class="btn btn-circle bg-transparent border-0 hover:bg-transparent hover:border-0"
+                    >❮</a
+                  >
+                  <a
+                    href="#slide4"
+                    class="btn btn-circle bg-transparent border-0 hover:bg-transparent hover:border-0"
+                    >❯</a
+                  >
+                </div>
+              </div>
+              <div
+                id="slide4"
+                class="carousel-item relative w-full flex flex-col justify-center items-center"
+              >
+                <img
+                  class="w-20 h-20 rounded-full object-cover mb-6"
+                  src="./assets/images/awlad.jpg"
+                  alt="awlad"
+                />
+                <h5 class="font-garamond text-2xl pb-2">Awlad</h5>
+                <p class="pb-8">UIX Designer</p>
+                <p class="w-4/5 text-xs sm:text-sm lg:text-base">
+                  Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur.
+                </p>
+                <div
+                  class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                >
+                  <a
+                    href="#slide3"
+                    class="btn btn-circle bg-transparent border-0 hover:bg-transparent hover:border-0"
+                    >❮</a
+                  >
+                  <a
+                    href="#slide1"
+                    class="btn btn-circle bg-transparent border-0 hover:bg-transparent hover:border-0"
+                    >❯</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- review section ends -->
+
+      <!-- FAQ section starts  -->
+      <section class="py-12 px-2">
+        <div class="pb-6 sm:pb-8 lg:pb-16">
+          <h4
+            class="font-garamond text-2xl sm:text-2.5rem text-black pb-4 sm:pb-6"
+          >
+            Frequently Asked Any Questions
+          </h4>
+          <p
+            class="text-sm sm:text-base w-4/5 lg:w-3/5 mx-auto text-light-black"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        <div
+          class="flex flex-col-reverse sm:flex-row justify-center items-center gap-4 sm:gap-0"
+        >
+          <div class="lg:w-1/2 text-left space-y-4">
+            <div class="collapse collapse-plus bg-[#F3F3F3]">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-2xl text-black font-garamond">
+                1.Are application fee waivers available?
+              </div>
+              <div class="collapse-content">
+                <p class="text-sm lg:text-base text-light-black w-11/12">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, .
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-[#F3F3F3]">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl text-black font-garamond">
+                1.Are application fee waivers available?
+              </div>
+              <div class="collapse-content">
+                <p class="text-sm lg:text-base text-light-black w-11/12">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, .
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-[#F3F3F3]">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl text-black font-garamond">
+                1.Are application fee waivers available?
+              </div>
+              <div class="collapse-content">
+                <p class="text-sm lg:text-base text-light-black w-11/12">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, .
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-[#F3F3F3]">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl text-black font-garamond">
+                1.Are application fee waivers available?
+              </div>
+              <div class="collapse-content">
+                <p class="text-sm lg:text-base text-light-black w-11/12">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, .
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2 flex justify-center items-center">
+            <img src="./assets/images/faq.png" alt="FAQ" class="w-3/4" />
+          </div>
+        </div>
+      </section>
+      <!-- FAQ section ends -->
+
+      <!-- Contact section starts  -->
+      <section class="py-12 px-2">
+        <div class="pb-6 sm:pb-8 lg:pb-16">
+          <h4
+            class="font-garamond text-2xl sm:text-2.5rem text-black pb-4 sm:pb-6"
+          >
+            Contact With Us
+          </h4>
+          <p
+            class="text-sm sm:text-base w-4/5 lg:w-3/5 mx-auto text-light-black"
+          >
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center sm:gap-4 lg:gap-8">
+          <div
+            class="w-full grid grid-cols-1 sm:grid-cols-2 divide-[#CFCFCF] sm:divide-x-2 divide-y-2"
+          >
+            <div class="card bg-[#F3F3F3] rounded-none w-full">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./assets/images/location.png"
                   alt="Shoes"
+                  class="rounded-xl"
                 />
               </figure>
-              <div class="card-body space-y-4">
-                <p class="text-base text-[#6C6C6C]">
-                  Slate helps you see how many more days you need to work to
-                  reach your financial goal for the month and year.
+              <div class="card-body items-center text-center gap-6">
+                <h2 class="font-garamond text-black text-xl sm:text-3xl">
+                  Address
+                </h2>
+                <p class="text-sm sm:text-base text-light-black">
+                  A108 Adam Street, <br />
+                  New York, NY 535022
                 </p>
-                <div class="card-actions items-center flex-col space-y-4">
-                  <div class="rating">
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                      checked
-                    />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                    />
-                  </div>
-                  <p class="text-sm text-blue-500 font-semibold">
-                    Regina Miles
-                  </p>
-                  <p class="text-sm text-black font-semibold">Banker</p>
-                </div>
               </div>
             </div>
-            <div
-              class="card card-compact border border-[#DEDEDE] border-solid px-9 py-10 space-y-8"
-            >
-              <figure>
+            <div class="card bg-[#F3F3F3] rounded-none w-full">
+              <figure class="px-10 pt-10">
                 <img
-                  class="w-1/2"
-                  src="./assets/images/others/user-1.png"
+                  src="./assets/images/call.png"
                   alt="Shoes"
+                  class="rounded-xl"
                 />
               </figure>
-              <div class="card-body space-y-4">
-                <p class="text-base text-[#6C6C6C]">
-                  Slate helps you see how many more days you need to work to
-                  reach your financial goal for the month and year.
+              <div class="card-body items-center text-center gap-6">
+                <h2 class="font-garamond text-black text-xl sm:text-3xl">
+                  Call Us
+                </h2>
+                <p class="text-sm sm:text-base text-light-black">
+                  +88 01750 00 00 00 <br />
+                  +88 01750 00 00 00
                 </p>
-                <div class="card-actions items-center flex-col space-y-4">
-                  <div class="rating">
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                      checked
-                    />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                    />
-                  </div>
-                  <p class="text-sm text-blue-500 font-semibold">
-                    Regina Miles
-                  </p>
-                  <p class="text-sm text-black font-semibold">Banker</p>
-                </div>
               </div>
             </div>
-            <div
-              class="card card-compact border border-[#DEDEDE] border-solid px-9 py-10 space-y-8"
-            >
-              <figure>
+            <div class="card bg-[#F3F3F3] rounded-none w-full">
+              <figure class="px-10 pt-10">
                 <img
-                  class="w-1/2"
-                  src="./assets/images/others/user-1.png"
+                  src="./assets/images/email.png"
                   alt="Shoes"
+                  class="rounded-xl"
                 />
               </figure>
-              <div class="card-body space-y-4">
-                <p class="text-base text-[#6C6C6C]">
-                  Slate helps you see how many more days you need to work to
-                  reach your financial goal for the month and year.
+              <div class="card-body items-center text-center gap-6">
+                <h2 class="font-garamond text-black text-xl sm:text-3xl">
+                  Email Us
+                </h2>
+                <p class="text-sm sm:text-base text-light-black">
+                  info@gmail.com <br />
+                  info@gmail.com
                 </p>
-                <div class="card-actions items-center flex-col space-y-4">
-                  <div class="rating">
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                      checked
-                    />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                    />
-                    <input
-                      type="radio"
-                      name="rating-2"
-                      class="mask mask-star-2 bg-orange-400"
-                    />
-                  </div>
-                  <p class="text-sm text-blue-500 font-semibold">
-                    Regina Miles
-                  </p>
-                  <p class="text-sm text-black font-semibold">Banker</p>
-                </div>
+              </div>
+            </div>
+            <div class="card bg-[#F3F3F3] rounded-none w-full">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./assets/images/time.png"
+                  alt="Shoes"
+                  class="rounded-xl"
+                />
+              </figure>
+              <div class="card-body items-center text-center gap-6">
+                <h2 class="font-garamond text-black text-xl sm:text-3xl">
+                  Working Hours
+                </h2>
+                <p class="text-sm sm:text-base text-light-black">
+                  Mon-Fri: 9AM to 5PM <br />
+                  Sunday: 9AM to 1 PM
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- happy clients section ends -->
-
-      <!-- faq section starts  -->
-      <section class="my-24">
-        <div class="container mx-auto px-4">
-          <h3
-            class="text-2xl sm:text-4xl lg:text-5xl text-black font-semibold text-center"
-          >
-            Frequently Asked<span class="text-[#E76F51]"> Quesions</span>
-          </h3>
           <div
-            class="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-16 py-6 lg:py-10"
+            class="w-full flex flex-col sm:gap-4 lg:gap-8 space-y-4 sm:space-y-0"
           >
-            <div class="sm:w-1/2 flex justify-center items-center">
-              <img
-                src="./assets/images/others/faq.png"
-                class="w-full sm:w-3/4 lg:w-1/2"
-              />
-            </div>
-            <div class="space-y-4 sm:w-1/2">
-              <div
-                class="collapse collapse-arrow border border-solid border-[#D5E5FB] rounded-md"
-              >
-                <input type="radio" name="my-accordion-2" checked="checked" />
-                <div
-                  class="collapse-title text-base font-medium text-[#383838] font-medium"
-                >
-                  What are the most important things I should know about riding
-                  a bike?
-                </div>
-                <div class="collapse-content">
-                  <p class="text-sm text-[#7E848C]">
-                    Safety First! Always obey the rules of the road. Obey all
-                    traffic signals, signs, and laws. Get in the mindset of
-                    “driving” your bike—not just “riding” your bike. This will
-                    help you be a more focused and legally compliant bike rider.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="collapse collapse-arrow border border-solid border-[#D5E5FB] rounded-md"
-              >
-                <input type="radio" name="my-accordion-2" />
-                <div
-                  class="collapse-title text-base font-medium text-[#383838] font-medium"
-                >
-                  How can I tell if my helmet is old and I need a new one?
-                </div>
-                <div class="collapse-content">
-                  <p class="text-sm text-[#7E848C]">
-                    Safety First! Always obey the rules of the road. Obey all
-                    traffic signals, signs, and laws. Get in the mindset of
-                    “driving” your bike—not just “riding” your bike. This will
-                    help you be a more focused and legally compliant bike rider.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="collapse collapse-arrow border border-solid border-[#D5E5FB] rounded-md"
-              >
-                <input type="radio" name="my-accordion-2" />
-                <div
-                  class="collapse-title text-base font-medium text-[#383838] font-medium"
-                >
-                  My bike has been in storage is it safe to ride?
-                </div>
-                <div class="collapse-content">
-                  <p class="text-sm text-[#7E848C]">
-                    Safety First! Always obey the rules of the road. Obey all
-                    traffic signals, signs, and laws. Get in the mindset of
-                    “driving” your bike—not just “riding” your bike. This will
-                    help you be a more focused and legally compliant bike rider.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="collapse collapse-arrow border border-solid border-[#D5E5FB] rounded-md"
-              >
-                <input type="radio" name="my-accordion-2" />
-                <div
-                  class="collapse-title text-base font-medium text-[#383838] font-medium"
-                >
-                  What rules should I follow when riding my bike?
-                </div>
-                <div class="collapse-content">
-                  <p class="text-sm text-[#7E848C]">
-                    Safety First! Always obey the rules of the road. Obey all
-                    traffic signals, signs, and laws. Get in the mindset of
-                    “driving” your bike—not just “riding” your bike. This will
-                    help you be a more focused and legally compliant bike rider.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <input
+              class="p-6 bg-[#F3F3F3] rounded-lg"
+              type="text"
+              placeholder="Your Name"
+            />
+            <input
+              class="p-6 bg-[#F3F3F3] rounded-lg"
+              type="text"
+              placeholder="Your Email"
+            />
+            <input
+              class="p-6 bg-[#F3F3F3] rounded-lg"
+              type="text"
+              placeholder="Subject"
+            />
+            <textarea
+              class="textarea p-6 bg-[#F3F3F3] rounded-lg"
+              placeholder="Your Message"
+            ></textarea>
+            <button class="nav-btn w-1/2 sm:w-full mx-auto">
+              Send Message
+            </button>
           </div>
         </div>
       </section>
-      <!-- faq section ends -->
+      <!-- Contact section ends -->
     </main>
+    <!-- main ends -->
 
-    <!-- main ends  -->
-
-    <!-- footer starts  -->
-    <footer
-      class="flex flex-col gap-20 pt-20 pb-10 px-6 bg-[#0B0D17] text-neutral-content"
-    >
-      <div class="flex flex-col sm:flex-row sm:justify-between gap-14">
-        <aside class="flex flex-col gap-5">
-          <div class="flex gap-6">
-            <p class="text-base text-white">Download Now</p>
-            <p class="text-base text-white">License</p>
-          </div>
-          <div class="flex flex-wrap gap-x-11 gap-y-6">
-            <p class="text-base text-white">About</p>
-            <p class="text-base text-white">Features</p>
-            <p class="text-base text-white">Pricing</p>
-            <p class="text-base text-white">Help</p>
-            <p class="text-base text-white">Career</p>
-            <p class="text-base text-white">Privacy Policy</p>
-          </div>
-          <div class="w-full hidden sm:block">
-            <p class="text-sm">© 2020 bike. All rights reserved</p>
-          </div>
-        </aside>
-        <nav>
-          <header class="text-lg text-white pb-4">Get the App</header>
-          <div class="flex flex-col gap-4">
-            <a>
-              <img
-                class="w-1/2"
-                src="./assets/images/others/android.png"
-                alt=""
-              />
-            </a>
-            <a>
-              <img class="w-1/2" src="./assets/images/others/ios.png" alt="" />
-            </a>
-          </div>
-        </nav>
-      </div>
-      <div class="w-full block sm:hidden">
-        <p class="text-sm w-full text-center">
-          © 2020 bike. All rights reserved
-        </p>
+    <!-- footer starts -->
+    <footer class="bg-[#111111] text-white">
+      <div class="container mx-auto">
+        <div class="footer py-28 px-2">
+          <aside class="space-y-8">
+            <img src="./assets/images/logo.png" alt="logo" />
+            <p class= text-sm"lg:text-base">
+              There are many variations of <br />
+              passages of Lorem Ipsum <br />
+              available, but the majority have <br />
+              suffered alteration in some <br />
+              form, by injected humour.
+            </p>
+          </aside>
+          <nav>
+            <header
+              class="footer-title opacity-100 pb-10 text-2xl font-garamond"
+            >
+              Usefull Link
+            </header>
+            <a class="link link-hover text-sm lg:text-base">Homes</a>
+            <a class="link link-hover text-sm lg:text-base">About us</a>
+            <a class="link link-hover text-sm lg:text-base">Cases</a>
+            <a class="link link-hover text-sm lg:text-base">Blog</a>
+            <a class="link link-hover text-sm lg:text-base">Contact Us</a>
+          </nav>
+          <nav>
+            <header
+              class="footer-title opacity-100 pb-10 text-2xl font-garamond"
+            >
+              Contact Now
+            </header>
+            <a class="link link-hover text-sm lg:text-base"
+              >555 4th 5t NW, Washington <br />
+              DC 20530, United States</a
+            >
+            <a class="link link-hover text-sm lg:text-base"
+              >+88 01750 000 000 <br />
+              +88 01750 000 000</a
+            >
+            <a class="link link-hover text-sm lg:text-base"
+              >info@gmail.com <br />
+              info@gmail.com</a
+            >
+          </nav>
+          <form>
+            <header
+              class="footer-title opacity-100 pb-8 text-2xl font-garamond"
+            >
+              Subscribe
+            </header>
+            <fieldset class="form-control w-80">
+              <label class="label">
+                <span class="label-text text-sm lg:text-base"
+                  >Subscribe for our latest & <br />
+                  Articles. We Won’t Give You <br />
+                  Spam Mails</span
+                >
+              </label>
+              <div class="relative">
+                <input
+                  type="text"
+                  placeholder="Email address"
+                  class="input input-bordered w-full pr-16"
+                />
+                <button
+                  class="btn text-white absolute top-0 right-0 rounded-lg bg-gold"
+                >
+                  <i class="fa-regular fa-paper-plane"></i>
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- footer ends -->
