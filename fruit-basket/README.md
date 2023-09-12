@@ -3,5 +3,5 @@
 <h1 align="center">Fruit Basket</h1>
 
 <div align="center">
-   Live Site:  <a href="https://fruit-basket-inj.netlify.app/" target="_blank">Game Zone</a>.
+   Live Site:  <a href="https://fruit-basket-inj.netlify.app/" target="_blank">Fruit Basket</a>.
 </div>
