@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slide-btn {
+  @apply h-7 sm:h-12 w-7 sm:w-12 rounded-full p-0 bg-black hover:bg-white text-white hover:text-black flex flex-shrink-0 flex-wrap justify-center items-center;
+}
+.hero-btn {
+  @apply py-0.5625rem lg:py-5 px-1.125rem lg:px-1.875rem bg-soft-red rounded-lg font-bold text-white text-lg sm:text-xl;
+}
+.card-btn {
+  @apply text-xl font-bold text-soft-red py-0.5625rem px-1.125rem rounded-md hover:bg-black-1;
+}
+.modal-btn {
+  @apply py-0.5625rem  px-1.125rem bg-soft-red rounded-lg font-bold text-white text-lg sm:text-xl;
+}
+.modal-btn-outline {
+  @apply py-0.5625rem  px-1.125rem  bg-transparent border border-solid border-soft-red hover:bg-soft-red hover:text-white rounded-lg font-bold text-soft-red text-lg sm:text-xl;
+}
