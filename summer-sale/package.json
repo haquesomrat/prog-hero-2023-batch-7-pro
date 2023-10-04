@@ -1,0 +1,16 @@
+{
+  "name": "summer-sale",
+  "version": "1.0.0",
+  "description": "*",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/tailwind.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "daisyui": "^3.8.3",
+    "tailwindcss": "^3.3.3"
+  }
+}
